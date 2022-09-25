@@ -1,5 +1,5 @@
 {
-    "name": "waqarali7/imilezcart",
+    "name": "dev-flynbox/imileflynbox",
     "description": "laravel Imile shipping integration in Zcart",
     "type": "library",
     "license": "MIT",
@@ -14,14 +14,14 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Waqarali7\\Imilezcart\\ImilezcartServiceProvider"
+                "Flynbox\\Imileflynbox\\ImilezcartServiceProvider"
             ]
         }
     },
     "authors": [
         {
-            "name": "Waqar Ali",
-            "email": "skyvz21@gmail.com"
+            "name": "Sky Dev",
+            "email": "dev.flynbox@gmail.com"
         }
     ],
     "minimum-stability": "dev",
