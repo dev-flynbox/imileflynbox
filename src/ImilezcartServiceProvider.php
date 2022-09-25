@@ -15,6 +15,16 @@ class ImilezcartServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'imilezcart');
+        $this->publishes([
+            __DIR__.'/../migrations/' => database_path('migrations')
+        ], 'imilezcart-migrations');
+        $this->publishes([
+            __DIR__.'/../config/imilezcart.php' => config_path('imilezcart.php'),
+        ]);
+        $this->publishes([
+            __DIR__.'/../config/imile_endpoints.php' => config_path('imile_endpoints.php'),
+        ]);
+
     }
 
     /**
@@ -24,5 +34,11 @@ class ImilezcartServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom(
+            __DIR__.'/../config/imilezcart.php', 'imilezcart'
+        );
+        $this->app->bind('imilezcart',function() {
+            return new \Waqarali7\Imilezcart\Imilezcart;
+        });
     }
 }
