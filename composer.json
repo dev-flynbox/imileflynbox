@@ -8,7 +8,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "seeders/",
-            "Waqarali7\\Imilezcart\\": "src/"
+            "DevFlynbox\\Imileflynbox\\": "src/"
         }
     },
     "extra": {
