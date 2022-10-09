@@ -1,5 +1,5 @@
 <?php
-namespace Waqarali7\Imilezcart\Models;
+namespace Flynbox\Imileflynbox\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

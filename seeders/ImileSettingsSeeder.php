@@ -1,6 +1,6 @@
 <?php
 
-namespace Waqarali7\Imilezcart\Seeders;
+namespace Flynbox\Imileflynbox\Seeders;
 
 use Carbon\Carbon;
 use Database\Seeders\BaseSeeder;

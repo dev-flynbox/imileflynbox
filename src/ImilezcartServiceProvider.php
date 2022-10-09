@@ -1,6 +1,6 @@
 <?php
 
-namespace Waqarali7\Imilezcart;
+namespace Flynbox\Imileflynbox;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -38,7 +38,7 @@ class ImilezcartServiceProvider extends ServiceProvider
             __DIR__.'/../config/imilezcart.php', 'imilezcart'
         );
         $this->app->bind('imilezcart',function() {
-            return new \Waqarali7\Imilezcart\Imilezcart;
+            return new \Flynbox\Imileflynbox\Imilezcart;
         });
     }
 }

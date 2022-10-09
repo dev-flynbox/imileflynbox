@@ -1,6 +1,6 @@
 <?php
 
-namespace Waqarali7\Imilezcart\Facade;
+namespace DevFlynbox\Imileflynbox\Facade;
 
 use Illuminate\Support\Facades\Facade;
 

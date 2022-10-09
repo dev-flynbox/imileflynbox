@@ -1,6 +1,6 @@
 <?php
 
-namespace Waqarali7\Imilezcart\Http\Controllers;
+namespace Flynbox\Imileflynbox\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Order;

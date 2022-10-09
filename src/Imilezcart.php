@@ -1,6 +1,6 @@
 <?php
 
-namespace Waqarali7\Imilezcart;
+namespace Flynbox\Imileflynbox;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Http;
