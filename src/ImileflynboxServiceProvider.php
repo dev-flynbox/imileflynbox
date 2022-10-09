@@ -4,7 +4,7 @@ namespace DevFlynbox\Imileflynbox;
 
 use Illuminate\Support\ServiceProvider;
 
-class ImilezcartServiceProvider extends ServiceProvider
+class ImileflynboxServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -14,12 +14,12 @@ class ImilezcartServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'imilezcart');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'imileflynbox');
         $this->publishes([
             __DIR__.'/../migrations/' => database_path('migrations')
-        ], 'imilezcart-migrations');
+        ], 'imileflynbox-migrations');
         $this->publishes([
-            __DIR__.'/../config/imilezcart.php' => config_path('imilezcart.php'),
+            __DIR__.'/../config/imileflynbox.php' => config_path('imileflynbox.php'),
         ]);
         $this->publishes([
             __DIR__.'/../config/imile_endpoints.php' => config_path('imile_endpoints.php'),
@@ -35,10 +35,10 @@ class ImilezcartServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/imilezcart.php', 'imilezcart'
+            __DIR__.'/../config/imileflynbox.php', 'imileflynbox'
         );
-        $this->app->bind('imilezcart',function() {
-            return new \DevFlynbox\Imileflynbox\Imilezcart;
+        $this->app->bind('imileflynbox',function() {
+            return new \DevFlynbox\Imileflynbox\Imileflynbox;
         });
     }
 }

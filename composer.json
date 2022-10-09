@@ -14,7 +14,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Flynbox\\Imileflynbox\\ImilezcartServiceProvider"
+                "DevFlynbox\\Imileflynbox\\ImileflynboxServiceProvider"
             ]
         }
     },

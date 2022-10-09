@@ -5,9 +5,9 @@ namespace DevFlynbox\Imileflynbox\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Order;
 use Illuminate\Http\Request;
-use DevFlynbox\Imileflynbox\Imilezcart;
+use DevFlynbox\Imileflynbox\Imileflynbox;
 
-class ImilezcartController extends Controller
+class ImileflynboxController extends Controller
 {
     //
     /**
@@ -21,12 +21,12 @@ class ImilezcartController extends Controller
     public function imileTrack(Request $request)
     {
         $order = Order::where('tracking_id',$request->order)->firstOrFail();
-        $imilezcart = new Imilezcart();
+        $imileflynbox = new Imileflynbox();
         $data = [];
-        $res = $imilezcart::trackOrder($order->order_number);
+        $res = $imileflynbox::trackOrder($order->order_number);
         if($res["code"] == "200"){
             $data = $res["data"];
         }
-        return view('imilezcart::track', compact('order','data'));
+        return view('imileflynbox::track', compact('order','data'));
     }
 }

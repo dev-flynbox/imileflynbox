@@ -5,7 +5,7 @@ namespace DevFlynbox\Imileflynbox;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Session;
-use Waqarali7\Imilezcart\Models\SystemImile;
+use DevFlynbox\Imileflynbox\Models\SystemImile;
 
 class Imilezcart
 {

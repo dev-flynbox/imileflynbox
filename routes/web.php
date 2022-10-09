@@ -1,9 +1,9 @@
 <?php
 
-use DevFlynbox\Imileflynbox\Http\Controllers\ImilezcartController;
+use DevFlynbox\Imileflynbox\Http\Controllers\ImileflynboxController;
 
 Route::group(['namespace' => 'DevFlynbox\Imileflynbox\Http\Controllers'],function (){
     Route::get('track', [
-        ImilezcartController::class, 'imileTrack'
+        ImileflynboxController::class, 'imileTrack'
     ])->name('order.imile.track');
 });
