@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Session;
 use DevFlynbox\Imileflynbox\Models\SystemImile;
 
-class Imilezcart
+class Imileflynbox
 {
     private static $get_access_token_url = '';
     private static $add_consignor_url = '';
