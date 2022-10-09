@@ -1,6 +1,6 @@
 <?php
 
-namespace Flynbox\Imileflynbox;
+namespace DevFlynbox\Imileflynbox;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Http;

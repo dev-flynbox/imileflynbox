@@ -1,11 +1,11 @@
 <?php
 
-namespace Flynbox\Imileflynbox\Http\Controllers;
+namespace DevFlynbox\Imileflynbox\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Order;
 use Illuminate\Http\Request;
-use Waqarali7\Imilezcart\Imilezcart;
+use DevFlynbox\Imileflynbox\Imilezcart;
 
 class ImilezcartController extends Controller
 {

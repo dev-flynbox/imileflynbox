@@ -1,8 +1,8 @@
 <?php
 
-use Flynbox\Imileflynbox\Http\Controllers\ImilezcartController;
+use DevFlynbox\Imileflynbox\Http\Controllers\ImilezcartController;
 
-Route::group(['namespace' => 'Flynbox\Imileflynbox\Http\Controllers'],function (){
+Route::group(['namespace' => 'DevFlynbox\Imileflynbox\Http\Controllers'],function (){
     Route::get('track', [
         ImilezcartController::class, 'imileTrack'
     ])->name('order.imile.track');

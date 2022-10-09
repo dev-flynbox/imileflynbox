@@ -1,6 +1,6 @@
 <?php
 
-namespace Flynbox\Imileflynbox\Seeders;
+namespace DevFlynbox\Imileflynbox\Seeders;
 
 use Carbon\Carbon;
 use Database\Seeders\BaseSeeder;
