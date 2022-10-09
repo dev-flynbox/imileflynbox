@@ -1,5 +1,6 @@
 <?php
 
+
 use DevFlynbox\Imileflynbox\Http\Controllers\ImileflynboxController;
 
 Route::group(['namespace' => 'DevFlynbox\Imileflynbox\Http\Controllers'],function (){
